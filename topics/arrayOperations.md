@@ -1,7 +1,7 @@
 **JavaScript Array Operations**
+---
 
-**Introduction:**
-Why `[7,9,2,3][0,3,1]` evaluates to 9? Let's embark on a journey together and unravel the mystery!
+**Why `[7,9,2,3][0,3,1]` evaluates to 9?**
 
 ```javascript
 console.log([7,9,2,3][0,3,1]);
@@ -38,3 +38,28 @@ function gamma() {
 const delta = (alpha(), beta(), gamma());
 console.log(delta); // Outputs 'gamma'
 ```
+
+---
+\
+**Why `Array.from("GoodMorning")[3]` evaluates to d?**
+
+```javascript
+const chars = Array.from("GoodMorning")[3];
+console.log(chars);
+```
+
+
+**Explanation:**
+In this code snippet, we utilize the Array.from() method to convert the string "GoodMorning" into an array of characters. Here's a breakdown of what happens:
+
+*"GoodMorning"* is passed as an argument to Array.from().
+Array.from() iterates over each character in the string and creates a new array with each character as an element. So, "GoodMorning" is converted into 
+\
+['G', 'o', 'o', 'd', 'M', 'o', 'r', 'n', 'i', 'n', 'g'].
+[3] 
+\
+accesses the element at index 4 of the newly created array, which corresponds to the character "d".
+The value "d" is assigned to the variable chars.
+Finally, chars is logged to the console, resulting in the output of "d".
+\
+So, when you run this code snippet, you'll see "d" logged in the console.
